@@ -21,41 +21,47 @@ let pase = prompt("¿Tienes un pase VIP? si - no").toLocaleLowerCase();
 
 let salud = prompt("¿Tienes alguna condición médica? si - no").toLocaleLowerCase();
 
-let acompañante = prompt("¿Te acompaña un adulto? si - no").toLocaleLowerCase();
-
 if(edad >= 12 && altura >= 140){
 
     if(edad < 16){
 
         let acompañante = prompt("¿Te acompaña un adulto? si - no").toLocaleLowerCase();
-        
+
         if(acompañante === "si"){
             if((pago === "si" || pase === "si") && salud === "no"){
+                alert("Puedes ingresar al parque con tu acompañante, bienvenidos!")
                 console.log("Puedes ingresar al parque con tu acompañante, bienvenidos!")
             }
             else if(pago === "no" || pase === "no"){
+                alert("No puedes entrar porque no tienes ningún pago ni pase.")
                 console.log("No puedes entrar porque no tienes ningún pago ni pase.")
             }
             else{
+                alert("No puedes ingresar por tu condición de salud.")
                 console.log("No puedes ingresar por tu condición de salud.")
             }
         }
         else{
+            alert("Ya que eres menor de edad y no te acompaña un adulto, no puedes ingresar.")
             console.log("Ya que eres menor de edad y no te acompaña un adulto, no puedes ingresar.")
         }
     }
     else{
         if((pago === "si" || pase === "si") && salud === "no"){
+            alert("Puedes ingresar al parque, bienvenido!")
             console.log("Puedes ingresar al parque, bienvenido!")
         }
         else if(pago === "no" || pase === "no"){
+            alert("No puedes entrar porque no tienes ningún pago ni pase.")
             console.log("No puedes entrar porque no tienes ningún pago ni pase.")
         }
         else{
+            alert("No puedes ingresar por tu condición de salud.")
             console.log("No puedes ingresar por tu condición de salud.")
         }
     }
 }
 else{
+    alert("No cumples con los requisitos para ingresar.")
     console.log("No cumples con los requisitos para ingresar.")
 }
