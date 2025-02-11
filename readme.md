@@ -5,3 +5,6 @@
  ### de utilidad para lograr realizar el proyecto final.
 
  #### ACTIVIDAD LECCIÓN 1:  Miércoles 05 de febrero del 2025.
+ #### ACTIVIDAD LECCIÓN 2:  Lunes 10 de febrero del 2025
+
+ 
