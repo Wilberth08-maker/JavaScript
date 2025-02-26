@@ -1,4 +1,4 @@
-// Proyecto. Lección 3 - Arreglos y cliclos en JavaScript
+// Proyecto Arreglos y ciclos. Lección 3 - Arreglos y cliclos en JavaScript
 
 let frutas = ["sandía",  "uvas", "melón", "platano", "manzana", "pitahaya", "pera", "uvas",
     "papaya", "toronja", "mango", "pitahaya", "piña", "cereza", "durazno", "toronja",
@@ -20,4 +20,4 @@ for(let i=0; i < frutas.length; i++ ){     // Se crea un for que vaya desde 0 ha
     }
 }
 
-console.log(cantidadDeFrutas)
+console.log("Cantidad de frutas:", cantidadDeFrutas)
