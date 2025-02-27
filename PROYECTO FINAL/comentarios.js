@@ -3,7 +3,7 @@ document.getElementById("comentarioForm").addEventListener("submit", (evento) =>
 
     let comentarioTexto = document.getElementById("comentarioInput").value;
     let fechaHora = new Date().toLocaleString();
-
+ 
     if(comentarioTexto.trim() === "") return;
 
     let comentarioDiv = document.createElement("div");
@@ -12,7 +12,7 @@ document.getElementById("comentarioForm").addEventListener("submit", (evento) =>
     comentarioDiv.innerHTML =`
     <p>${comentarioTexto}</p>
         <span class="fecha">${fechaHora}</span>
-        <button class = "eliminar" > x</button>
+    <button class = "eliminar" > Eliminar comentario </button>
     `;       
     
 
