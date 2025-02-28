@@ -10,19 +10,18 @@ body{
     font-family: "Nunito", sans-serif;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgb(158, 223, 253);
+    background-color: rgb(190, 247, 255);
 }
 
 
 header {
     display: flex;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    
 }
 
 #simbología{
@@ -40,12 +39,15 @@ header {
     align-items: center;
     border-radius: 10px;
     margin-top: 15px;
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
 
 }
 
 .lecciones{
     padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(160, 126, 247);
+    font-size: 20px;
 }
 
 a{
