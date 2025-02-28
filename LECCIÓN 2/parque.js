@@ -28,18 +28,19 @@ if(edad >= 12 && altura >= 140){
         let acompañante = prompt("¿Te acompaña un adulto? si - no").toLocaleLowerCase();
 
         if(acompañante === "si"){
-            if((pago === "si" || pase === "si") && salud === "no"){
-                alert("Puedes ingresar al parque con tu acompañante, bienvenidos!")
-                console.log("Puedes ingresar al parque con tu acompañante, bienvenidos!")
-            }
-            else if(pago === "no" || pase === "no"){
-                alert("No puedes entrar porque no tienes ningún pago ni pase.")
-                console.log("No puedes entrar porque no tienes ningún pago ni pase.")
-            }
-            else{
+
+            if(salud === "si"){
                 alert("No puedes ingresar por tu condición de salud.")
                 console.log("No puedes ingresar por tu condición de salud.")
             }
+            else if((pago === "si" || pase === "si") && salud === "no"){
+                alert("Puedes ingresar al parque con tu acompañante, bienvenidos!")
+                console.log("Puedes ingresar al parque con tu acompañante, bienvenidos!")
+            }
+            else{
+                alert("No puedes entrar porque no tienes ningún pago ni pase.")
+                console.log("No puedes entrar porque no tienes ningún pago ni pase.")
+            }            
         }
         else{
             alert("Ya que eres menor de edad y no te acompaña un adulto, no puedes ingresar.")
@@ -47,18 +48,20 @@ if(edad >= 12 && altura >= 140){
         }
     }
     else{
-        if((pago === "si" || pase === "si") && salud === "no"){
-            alert("Puedes ingresar al parque, bienvenido!")
-            console.log("Puedes ingresar al parque, bienvenido!")
-        }
-        else if(pago === "no" || pase === "no"){
-            alert("No puedes entrar porque no tienes ningún pago ni pase.")
-            console.log("No puedes entrar porque no tienes ningún pago ni pase.")
-        }
-        else{
+        if(salud === "si"){
             alert("No puedes ingresar por tu condición de salud.")
             console.log("No puedes ingresar por tu condición de salud.")
         }
+
+        else if((pago === "si" || pase === "si") && salud === "no"){
+            alert("Puedes ingresar al parque, bienvenido!")
+            console.log("Puedes ingresar al parque, bienvenido!")
+        }
+        else{
+            alert("No puedes entrar porque no tienes ningún pago ni pase.")
+            console.log("No puedes entrar porque no tienes ningún pago ni pase.")
+        }
+        
     }
 }
 else{
