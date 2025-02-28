@@ -7,15 +7,12 @@
 body {
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     margin: 20px;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(245, 239, 173, 0.957);
-    
+    background-color: rgb(190, 247, 255);    
 }
 
 #titulo {
@@ -23,6 +20,15 @@ body {
     position: relative;
 }
 
+#comentarioForm #autorInput {
+    width: 75vw;
+    height: 30px;
+    margin-bottom: 10px ;
+    padding: 5px;
+    border-color: black;
+    box-shadow: 1px 1px 2px 0px;
+    position: relative;
+}
 
 
 #comentarioForm #comentarioInput {
@@ -78,6 +84,13 @@ button:hover{
     word-wrap: break-word;  
     margin: 0;  
     white-space: normal;  
+}
+
+.autor {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    background-color: rgb(220, 242, 245);
 }
 
 .fecha {
