@@ -1,22 +1,31 @@
 const formulario = document.getElementById("formulario")
 const usuarios = [
     {
-        user: "Wilberth",
+        user: "wilberth",
         pass: '1234'
     },
     {
-        user: "Jasiel",
+        user: "jasiel",
         pass: '12345'
     },
     {
-        user: "Jorge",
+        user: "jorge",
         pass: '123456'
     },
     {
-        user: "Angela",
+        user: "angela",
         pass: '1234567'
     }
 ]
+
+function mostrarError(tipo){
+    let span = document.getElementById("error");
+    span.innerHTML = tipo;
+    span.classList.remove("hide");
+    setTimeout(() => {
+        span.classList.add("hide")
+    }, 3000)
+}
 
 function validar(username, password){
     let usuarioEncontrado = false;
