@@ -1,7 +1,10 @@
 function generadorPassword(){
     const caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+~`|}{[];?><,./-=";
     let contraseña = "";
-    for(let i = 0; i < 8; i++){ // Generar la contraseña con valores random de 8 caracteres
+
+    // Generar la contraseña con valores random de 8 caracteres
+
+    for(let i = 0; i < 8; i++){ 
         const randomIndice  = Math.floor(Math.random()*caracteres.length);
         contraseña += caracteres.charAt(randomIndice);  // Acceder al caracter de la cadena de texto de acuerdo a el índice
          
@@ -9,6 +12,7 @@ function generadorPassword(){
     return contraseña;
 }
 
+// Cuando se de click al botón:
 submit.addEventListener("click",(evento) => {
     evento.preventDefault();   
 

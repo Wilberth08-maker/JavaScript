@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica</title>
+</head>
+<body>
+    <h1> La etiqueta parrafo con contenido "Reemplázame" se cambio a: </h1>
+
+    <div class="container">
+
+        <p class="hidden" style="display: none;">Texto oculto</p>
+
+        <p class="replace">Reemplázame</p>
+
+    </div>
+    <script>
+
+        // Obtener el párrafo oculto por la clase
+        //.querySelector obtiene el primer elemento con la clase solcitada ("hidden").
+        const parrafoOculto = document.querySelector(".hidden");
+
+        // Obtener la etiqueta que será reemplazada
+        const etiqueta = document.querySelector(".replace");
+
+        // Imprimir el texto oculto original
+        console.log("El texto oculto original es: ", parrafoOculto.textContent);
+
+        // Cambiar texto de párrafo oculto
+        const hiddenElement = document.querySelector(".hidden");
+        hiddenElement.textContent = "Texto revelado";
+      
+        // Mostrar solo el texto visible
+        const container = document.querySelector(".container");
+
+        // .innerText ignora los elementos ocultos a diferencia de .textContent, el cual si considera los elementos ocultos
+        console.log("El texto visible es: ", container.innerText); 
+
+        // Imprimir el texto modificado
+        console.log("El texto modificado es: ", parrafoOculto.textContent);
+
+        
+      
+        // Reemplazar etiqueta completa
+        const replaceElement = document.querySelector(".replace");
+        // .outerText cambia el contenido y reemplaza la etiqueta. A diferencia de .innerText que solo modifica el contenido.
+        replaceElement.outerText = "Etiqueta reemplazada";      
+
+        // Imprimir la etiqueta reemplazada
+        console.log("La etiqueta reemplazada es", replaceElement.outerText );
+
+    </script>
+    
+</body>
+</html>
