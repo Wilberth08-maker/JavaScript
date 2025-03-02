@@ -11,6 +11,6 @@
  #### ACTIVIDAD LECCIÓN 5:  Miércoles 19 de febrero del 2025. 
  #### ACTIVIDAD LECCIÓN 6:  Viernes 28 de febrero del 2025.
  #### ACTIVIDAD LECCIÓN 7:  Viernes 28 de febrero del 2025.
- #### ACTIVIDAD LECCIÓN 8:  Miércoles 26 de febrero del 2025.
+ #### ACTIVIDAD LECCIÓN 8:  Viernes 28 de febrero del 2025.
 
  
