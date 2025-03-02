@@ -1,3 +1,4 @@
+// Código a ejecutar al hacer el submit
 document.getElementById("comentarioForm").addEventListener("submit", (evento) => {
     evento.preventDefault();
 
@@ -5,13 +6,14 @@ document.getElementById("comentarioForm").addEventListener("submit", (evento) =>
     let comentarioTexto = document.getElementById("comentarioInput").value;
     let fechaHora = new Date().toLocaleString();
 
+    // Si el autor no pone su nombre se vuelve anonimo
     if(autorTexto.trim() === ""){
         autorTexto = "ANONIMO"
     };
- 
+
     if(comentarioTexto.trim() === "") return;
 
-    // Los datos guardados esten en un array
+    // Asegurar que los datosGuardados sea un array
     let datosGuardados = JSON.parse(localStorage.getItem("cajaComentarios")) || [];
 
     // Si datos guardados no es un array inicializarlo como un array vacio
@@ -32,8 +34,8 @@ document.getElementById("comentarioForm").addEventListener("submit", (evento) =>
     // Guardar el nuevo comentario en el localeStorage
     localStorage.setItem("cajaComentarios", JSON.stringify(datosGuardados));
 
-    // Verificar si se guardo en el localeStorage
-    console.log(localStorage.getItem("cajaComentarios"));
+    // Verificar si se guardaron los comentarios en el localeStorage
+    //console.log(localStorage.getItem("cajaComentarios"));//
 
     // Mostrar el comentario
     agregarComentario(nuevoComentario);
@@ -53,7 +55,7 @@ function agregarComentario (comentario) {
     <p class="autor">${comentario.autor}</p>
     <p>${comentario.comentario}</p>
         <span class="fecha">${comentario.fecha}</span>
-    <button class = "eliminar" > Eliminar comentario </button>
+    <button class = "eliminar"> Eliminar comentario </button>
     `;    
 
     // Agregar el comentario
@@ -68,7 +70,7 @@ function agregarComentario (comentario) {
 
 function eliminarComentario(comentarioEliminar){
         
-    // Obtener los comentarios guardados
+    // Obtener los comentarios guardados desde localeStorage y convertirlos en un objeto, si no hay inicializar un array vacío.
     let comentariosGuardados = JSON.parse(localStorage.getItem("cajaComentarios")) || [];
 
     // Filtar comentario a eliminar por su hora
@@ -81,7 +83,7 @@ function eliminarComentario(comentarioEliminar){
 // Mostrar los comentarios guardados al recagar la página
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Obtener los comentarios guardados
+    // Obtener los comentarios guardados desde localStorage y convertirlos en un objeto, si no hay inicializar un array vacío.
     let comentariosGuardados = JSON.parse(localStorage.getItem("cajaComentarios")) || [];
 
     // Pasar cada comentario a la función agregarComentario
