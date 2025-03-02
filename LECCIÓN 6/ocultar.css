@@ -57,3 +57,11 @@ button:hover{
     padding: 10px;
     border-radius: 10px;
 }
+
+/* Use visibility: hidden; y opacity: 0; en lugar de display: none; para que el botón y el título no ocuparan su espacio
+al ocultarlo, y se viera mejor */
+
+.hide{
+    visibility: hidden;
+    opacity: 0;
+}
