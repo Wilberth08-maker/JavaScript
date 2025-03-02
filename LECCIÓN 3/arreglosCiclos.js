@@ -16,7 +16,7 @@ for(let i=0; i < frutas.length; i++ ){     // Se crea un for que vaya desde 0 ha
     }
     
     else{
-        cantidadDeFrutas[fruta]=1;         // De lo contrario solo hay uno
+        cantidadDeFrutas[fruta] = 1;         // De lo contrario solo hay uno
     }
 }
 

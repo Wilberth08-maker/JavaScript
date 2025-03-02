@@ -24,7 +24,7 @@ if(nota >= 90){
 
 }   else { // 2.4. Si la nota es menor a 60.
 
-    alert("El estudiante No aprueba.")
+    alert("El estudiante NO aprueba.")
     console.log("No aprueba")
 
 }
