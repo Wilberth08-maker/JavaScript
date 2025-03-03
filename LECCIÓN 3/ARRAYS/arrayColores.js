@@ -1,6 +1,6 @@
 let colores = ["rojo", "verde", "amarillo", "azul"]; // Crear el array
 
-console.log(colores); // Imprimir el array sin modificaciones
+console.log(colores); // giImprimir el array sin modificaciones
 
 console.log(colores[1]); // Imprimir el segundo color del array
 
