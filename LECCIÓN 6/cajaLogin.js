@@ -35,7 +35,7 @@ function validar(username, password){
             usuarioEncontrado = true;
             if(password === usuarios[i].pass){
                 console.log("Bienvenido", usuarios[i].user);
-                window.location.href = "/index.html"
+                window.location.href = "https://wilberth08-maker.github.io/JavaScript/"
             }
             else{
                 mostrarError("Password incorrecto")
